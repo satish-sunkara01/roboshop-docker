@@ -8,12 +8,12 @@ services:
   catalogue:
     image: catalogue:v1
     depends_on:
-      - mongodb
+    - mongodb
   web:
     image: web:v1
     ports:
-      -"80:80"
+    - "80:80"
     depends_on:
-      - catalogue
-      - mongodb
+    - catalogue
+    - mongodb
 

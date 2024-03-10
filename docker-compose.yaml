@@ -41,3 +41,8 @@ services:
     image: mysql:v1
     container_name: mysql
 
+  shipping:
+    image: shipping:v1
+    depends_on:
+    - mysql 
+

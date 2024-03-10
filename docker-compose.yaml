@@ -17,3 +17,6 @@ services:
     - catalogue
     - mongodb
 
+  redis:
+    image: redis:v1
+
